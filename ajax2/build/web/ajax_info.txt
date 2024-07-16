@@ -1,0 +1,4 @@
+<h1>Ajax</h1>
+<p>Ajax no es un lenguaje de programacion</p>
+<p>Ajax es una tecnica para accesar a web servers desde una pagina web</P>
+<p>Ajax asincronus javascript y xml</P>

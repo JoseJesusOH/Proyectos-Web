@@ -1,0 +1,13 @@
+<%--
+    piePagina.jspf
+
+    Este fragmento de página JSP contiene el pie de pagina de la aplicación Web
+    Productos Web versión JSP.
+--%>
+
+<%@ page pageEncoding="UTF-8" %>
+<footer>
+    <div class="linea">
+    </div>
+    <p>Realizado por José Jesús - Agosto-Diciembre 2022</p>
+</footer>

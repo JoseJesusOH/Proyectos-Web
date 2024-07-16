@@ -1,0 +1,222 @@
+/* 
+    estilos.css
+
+    Establece las reglas de estilo generas para la aplicacion Web
+    AmanteMusicaWeb versión JSP.
+*/
+
+body {
+    font-family: Arial sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Este es el contenedor grid para la distribución
+   de la página. Tiene dos columnas y tres filas */
+.contenedorGrid {
+    display: grid;
+    grid-template-rows: 152px calc(100vh - 268px) 100px;
+    grid-template-columns: 251px calc(100vw - 251px);
+}
+
+/* Barra de titulo. Este elemento esta en la primera filas
+   y abarca dos columnas */
+header {
+    grid-column: 1 / span 2;
+    border-bottom: 1px solid Silver;
+    text-align: center;
+}
+
+/* Barra de navegacion. Este elemento esta en la segunda fila,
+   primera columna */
+nav {
+    border-right: 1px solid Silver;
+}
+
+/* Principal. Este elemento esta en la segunda fila,
+   segunda columna */
+main {
+    overflow: scroll;
+}
+
+/* Pie de pagina. Este elemento esta en la tercera fila
+   y abarca dos columnas */
+footer {
+    grid-column: 1 / span 2;
+    text-align: center;
+    border-top: 1px solid Silver;
+}
+
+/* Regla de estilo para la lista no ordenada que forma
+   la barra de navegacion */
+nav button {
+    width: 250px;
+    height: 2em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+    line-height: 2em;
+    padding-top:15px;
+    padding-bottom: 15px;
+    border: 1px solid black;
+}
+
+/* Este es el contenedor grid para la distribución
+   de un formulario. Tiene tres columnas */
+.contenedorFormulario {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+}
+
+/* Este elemento grid abarca dos columnas */
+.contenedorFormulario > div.span {
+    grid-column: 1 / span 2;
+}
+
+/* Este elemento grid centra su contenido */
+.contenedorFormulario > div.centrada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Este elemento grid justifica su contenido a la derecha */
+.contenedorFormulario > div.derecha {
+    text-align: right;
+}
+/* Regla de estilo para centrar horizontalmente una tabla
+   usada para colocar los elementos de entrada de los formularios
+   y en las que se despliegan los miembros de un objeto*/
+table.centrada {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Regla de estilo para centrar horizontalmente una tabla.
+   usada para  las tablas en la que se despliegan las listas */
+table.bicolor {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+/* Regla de estilo para los titulos de las tablas */
+caption {
+    caption-side: top;
+    margin-bottom: 0.5em;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+
+/* Regla de estilo para los renglones nones de una tabla.
+   Se usa para  las tablas en la que se despliegan las listas */
+table.bicolor tr:nth-child(odd) {
+    background-color: yellow;
+}
+
+/* Regla de estilo para los renglones pares de una tabla.
+   Se usa para  las tablas en la que se despliegan las listas */
+table.bicolor tr:nth-child(even) {
+    background-color: white;
+}
+
+/* Regla de estilo para celdas de tabla con encabezados */
+th {
+    text-align: center;
+    background-color: #ddd;
+    border: 1px solid #888;
+}
+
+/* Regla de estilo para celdas de tabla con encabezados
+   usadas para colocar los mensajes de error */
+th.error {
+    text-align: right;
+    padding-right: 5px;
+    background-color: #fff;
+    border-style: none;
+}
+
+/* Regla de estilo para justificar a la derecha las celdas de tabla
+   usadas en las celdas que tienen las etiquetas de los elementos
+   de entrada de un formulario y en las celdas que se despliegan
+   los nombres de los miembros de un objeto */
+td.derecha {
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* Regla de estilo para las celdas de tabla con fondo gris
+   usadas en las celdas que se despliegan los valores de 
+   los miembros de un objeto */
+td.gris {
+    background-color: #ddd;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #888;
+}
+
+/* Regla de estilo para las celdas de una tabla
+   usadas para  las tablas en la que se despliegan las listas */
+table.bicolor td {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #888;
+}
+
+/* Regla de estilo para las celdas usadas para mensajes de error */
+div.msjError {
+    color: red;
+    padding-left: 5px;
+}
+
+/* Regla de estilo para las celdas usadas para mensajes de aviso */
+div.msjAviso {
+    color: green;
+    white-space: pre;
+    padding-left: 5px;
+}
+
+/* Regla de estilo para centrar horizontalmente encabezados */
+h1 {
+    text-align: center;
+}
+
+/* Regla de estilo para elementos de entrada de solo lectura */
+input[readonly] {
+    background-color: #ddd;
+}
+
+div.tabla {
+    display: table;
+    margin: auto;
+}
+
+div.tituloTabla {
+    display: table-caption;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+div.fila {
+    display: table-row;
+}
+
+div.celda {
+    display: table-cell;
+    padding: 5px;
+}
+
+div.celda.derecha {
+    display: table-cell;
+    text-align: right;
+}
+
+div.centrada {
+    text-align: center;
+}

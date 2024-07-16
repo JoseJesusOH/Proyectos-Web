@@ -1,0 +1,12 @@
+<%--
+    menuProductos.jspf
+    Este fragmento de página JSP contiene el menú de productos de la aplicación Web
+    Productos Web versión JSP.
+
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<nav>
+    <a href="Control?tarea=agregarProducto">Agregar Producto</a></li>
+<a href="Control?tarea=actualizarProducto">Actualizar Producto</a></li>
+<a href="Control?tarea=obtenerProducto">Mostrar Productos</a></li>
+</nav>

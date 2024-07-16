@@ -1,0 +1,46 @@
+#menu {
+    width: 75%;
+    float: left;
+    font-size: 25px;
+}
+
+#menu ul {
+    line-height: 85px;
+    padding: 1px;
+    float: right;
+    text-align: center;
+    background-color: #cccccc;
+}
+
+#menu ul li {
+    display: inline-block;
+    list-style: none;
+    height: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+#menu a {
+    display: block;
+    background:#dddddd    ;
+    color:black;
+    width: 175px;
+    height: 40px;
+    margin: 0px auto;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 37px;
+    margin-top: 10px;
+    border-radius: 2px;
+    transition: 300ms all;
+}
+
+#menu a:hover {
+    color: white;
+    transform: scale(1.1, 1.1);
+}
+
+#menu ul li:hover {
+    transform: scale(1.2, 1.2);
+}

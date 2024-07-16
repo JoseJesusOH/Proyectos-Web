@@ -1,0 +1,60 @@
+body{
+	background: #B3B3B3;
+	
+}
+
+header{
+height: 120px;
+width: 100%;
+background: #B3B3B3;
+}
+#menu{
+    width: 70%;
+    float: left;
+    font-size: 18px;
+}
+#menu ul{
+    line-height: 85px;
+    width: 85%;
+    float: left;
+}
+#menu ul li{
+    display: inline-block;
+list-style: none;
+height: 46px;
+margin-left: 10px;
+margin-right: 10px;
+}
+#menu a{
+    text-decoration: none;
+    color: #444;
+transition: 300ms all;
+}
+#menu a:hover{
+    color:red;
+    transform: scale(1.2,1.2);
+}
+#menu ul li:hover{
+    transform: scale(1.2,1.2);
+}
+
+.btn-white{
+    display: block;
+    background: white;
+    color: rgb(88,88,88);
+    padding: 15px;
+    width: 80px;
+    height: 15px;
+    margin: 0px auto;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 5px;
+    text-shadow: 0px 0px 5px rgb(88,88,88);
+    border-radius: 4px;
+    transition: 300ms all;
+}
+.btn-white:hover{
+    background: #444;
+    color: white;
+}

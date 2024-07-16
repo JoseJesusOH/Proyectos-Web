@@ -1,0 +1,49 @@
+.wrap-container {
+    text-align: center;
+}
+
+.content {
+    width: 100%;
+}
+
+header {
+    background-color: green;
+    padding: 50px;
+}
+
+nav {
+    background-color: brown;
+    float: left;
+    width: 25%;
+    height: 300px;
+    padding-top: 75px;
+}
+
+main {
+    background-color: white;
+    float: left;
+    width: 50%;
+    height: 150px;
+    padding-top: 150px;
+}
+
+aside {
+    background-color: grey;
+    float: right;
+    width: 25%;
+    height: 300px;
+    padding-top: 75px;
+}
+
+footer {
+    background-color: yellow;
+    padding-top: 50px;
+    margin-top: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.clearfix {
+    clear: both;
+    float: none;
+}

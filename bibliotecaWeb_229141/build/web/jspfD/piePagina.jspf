@@ -1,0 +1,12 @@
+<%--
+    piePagina.jspf
+
+    Este fragmento de página JSP contiene el pie de pagina de la aplicación Web
+    AmanteMusicaWeb versión JSP.
+--%>
+
+<%@ page pageEncoding="UTF-8" %>
+            <footer>
+                <p>Informes: Manuel Domitsu Kono<br/>
+                    mdomitsu@itson.edu.mx</p>
+            </footer>

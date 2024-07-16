@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table,th,td{
+              border :1px solid black;
+              border-collapse: collapse;
+            }
+            th,td{
+                padding:5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="demo">
+            <h2>XMLHttpRequest</h2>
+            <button type="button" onclick="loadJson2()"> Cambiar Contenido </button> 
+        </div> 
+        <p id="demo2"></p>
+        <table id="demo3">
+
+        </table>
+        <script>
+            function loadDoc() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function () {
+                    if (this.readyState === 4 && this.status === 200) {
+                        document.getElementById("demo").innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "ajax_info.txt");
+                xhttp.send();
+            }
+
+            function loadJson() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function () {
+                    if (this.readyState === 4 && this.status === 200) {
+                        let txt = this.responseText;
+                        const obj = JSON.parse(txt);
+                        document.getElementById("demo2").innerHTML = obj.employees[1].firstName + " " + obj.employees[1].lastName;
+                    }
+                };
+                xhttp.open("GET", "data.txt");
+                xhttp.send();
+            }
+            function loadJson2() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function () {
+                    if (this.readyState === 4 && this.status === 200) {
+                        let txt = this.responseText;
+                        const obj = JSON.parse(txt);
+                        //document.getElementById("demo2").innerHTML = obj[0].title;
+                        miFuncion(obj);
+                    }
+                };
+                xhttp.open("GET", "https://jsonplaceholder.typicode.com/posts");
+                xhttp.send();
+            }
+            function miFuncion(json) {
+                let table = "<tr><th>ID</th><th>Title</th></tr>";
+                for (let i = 0; i < json.length; i++) {
+                    table += "<tr><td>" + json[i].id + "</td><td>" + json[i].title + "</td></tr>";
+                }
+                document.getElementById("demo3").innerHTML = table;
+            }
+        </script>
+    </body>
+</html>

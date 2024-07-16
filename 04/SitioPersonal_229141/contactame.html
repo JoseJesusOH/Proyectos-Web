@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- 
+    contactame.html
+    Alumno; José Jesús Orozco Herández
+    ID: 00000229141
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contacto</title>
+    <head>
+
+    <body style="background-color: darkgray;">  
+            <div style="text-align:center" >
+                <header>
+                        <p><span> </span>
+                        <img src="imagenes/logo.jpg " width="100" height="100"
+                             style="vertical-align:middle; border:1px solid black; margin: 0px 10px""/>
+                        <span><font style="font-size:40px; color:black">Contactame o Visitame</font></span>
+                        </p>
+                </header>
+               <hr />
+            </div>
+            <div style="text-align:center ">
+                <nav  style="font-size:24px; color:black"  >
+                   <a >Secciones</a> |
+                   <a href="Horario.html">Horario</a> |
+                   <a href="descripción.html">Descripción</a> |
+                   <a href="aficiones.html">Aficiones</a> |
+                   <a href="index.html">Inicio</a> |
+                 </nav>
+           </div>
+           <hr />
+           <br/>
+
+           <div style="text-align:center ">
+               <main>
+                
+                   <p>
+                       <h1>Contactame o Visitame tu eliges</h1>
+                        <img src="imagenes/mapa.png " width="200" height="200"
+                        style="border:1px solid black; margin: 0px 10px" align="top" border="1" hspace="10"/>
+                        <p><font style="font-size:25px; color:black">Si desea contactarme digite los siguientes datos:</font></p>
+                        <form action ="mailto: jose.orozco@potros.itson.edu.mx?subject=Contacto Sitio Web Estatico"
+                        method=post enctype="text/plain">
+                      <fieldset align="right">
+                        <p>Campo de entrada de texto</p>
+                        <label for="nombreId">Nombre*: </label>
+                        <input type="text" id="nombreId" name="nombre" size=15 maxlenght=40 required />
+                      <br />
+                      <label for="emailId" >E-mail: </label>
+                      <input type="email" id="emailId" name="email" />
+                      <br />
+                      <label for="origenId" >Donde se entero del sitio </label>
+                      <input type="text" id="opcionesID" list="opcionesL" />
+                      <datalist id="opcionesL">
+                          <option value="FA">Facebook</option>
+                          <option   value="CA">Clase APW</option>
+                          <option  value="OT">Otro</option>
+                      </datalist>
+                      <br />
+                      
+                      <fieldset>
+                          <legend>¿Es estudiante o Profesor?:</legend>
+                          <input type="radio" id="estudiante" name="estudiante" value="estudiante" />
+                          <label for="estudiante" >Estudiante</label>
+                          <br />
+                          <input type="radio" id="profesor" name="profesor" value="profesor" />
+                          <label for="profesor" >Profesor</label>
+                          <br />
+                      </fieldset>
+                      <br />
+                 
+            <fieldset align="right">
+                <legend>Visitaria el sitio nuevamente:</legend>
+                <input type="checkbox" id="si" name="SiVisita" 
+                       value="si" />
+                <label for="si" >SI</label>
+                <br />
+            </fieldset>
+            <br />
+                      <fieldset>
+                          <legend>Comentarios:</legend>
+                          <textarea name="comentario" rows="5" cols="80"></textarea>
+                      </fieldset>
+                      <br />
+                      <div align="center" >
+                          <input type="submit" name="boton" value="Enviar" />        
+                          <input type="reset" value="Borrar" />
+                      </div>
+                    </form>
+                    </p>
+               </main>
+           </div>
+           <br><br/>
+            <hr />
+            <br/>
+           <div style="text-align:center ">
+            <footer>
+                <p>Diseñado por José Jesús Orozco Hernández - Aplicaciones WEB </p>
+             </footer>
+           </div>
+          
+    </body>
+</html>

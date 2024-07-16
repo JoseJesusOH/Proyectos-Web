@@ -1,0 +1,15 @@
+<%--
+    menuPpal.jspf
+
+
+    Este fragmento de página JSP contiene el menú principal de la aplicación Web
+    AmanteMusicaWeb versión JSP.
+--%>
+
+
+<%@ page pageEncoding="UTF-8" %>
+<nav>
+    <a href="canciones.jsp">Catálogo de canciones</a></li>
+<a href="peliculas.jsp">Catálogo de películas</a></li>
+<a href="generos.jsp">Catálogo de géneros</a></li>
+</nav>

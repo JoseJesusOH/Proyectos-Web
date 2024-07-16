@@ -1,0 +1,555 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19/10/2021, 07:29:12 PM
+    Author     : lalo_
+*/
+
+@font-face {
+    font-family: "Indivisa TextSans Black";
+    src: url("fonts/indivisa_text_sans-black.eot");
+    src: url("fonts/indivisa_text_sans-black.eot?#iefix") format("embedded-opentype"), 
+    url("fonts/Indivisa_Text_Sans-Black.ttf") format("truetype"),
+    url("fonts/indivisa_text_sans-black.woff") format("woff");
+    font-weight: 900;
+    font-style: black;
+ }
+@font-face {
+    font-family: "Indivisa TextSans Bold";
+    src: url("fonts/indivisa_text_sans-bold.eot");
+    src: url("fonts/indivisa_text_sans-bold.eot?#iefix") format("embedded-opentype"), 
+    url("fonts/Indivisa_Text_Sans-Bold.ttf") format("truetype"),
+    url("fonts/indivisa_text_sans-bold.woff") format("woff");
+    font-weight: 700;
+    font-style: bold;
+    }
+@font-face {
+    font-family: "Indivisa TextSans Regular";
+    src: url("fonts/indivisa_text_sans-regular.eot");
+    src: url("fonts/indivisa_text_sans-regular.eot?#iefix") format("embedded-opentype"), 
+    url("fonts/Indivisa_Text_Sans-Regular.ttf") format("truetype"),
+    url("fonts/indivisa_text_sans-regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "WebSymbolsRegular";
+    src: url('fonts/websymbols-regular-webfont.eot');
+    src:url('fonts/websymbols-regular-webfont.eot?#iefi') format('embedded-opentype'),
+        url('fonts/websymbols-regular-webfont.woff') format('woff'),
+        url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+        url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Estilos generales*/
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    /*background: url('../image/pattern.png');*/
+    background: #f8f9fa;
+}
+.wrap{
+    width: 1250px;
+    margin: 0px auto;
+}
+.wrap-content{
+    width: 700px;
+    margin: 0px auto;
+}
+.icon{
+    font-family: "WebSymbolsRegular";
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    color: white;
+    border:1px solid #e6e6e6;
+}
+#logo{
+       float: left;
+    max-width: 280px;
+    margin-top: 35px;
+    margin-left: -4px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+}
+#menu{
+    float: right;
+    height: 100px;
+    background: transparent;
+}
+#menu ul li{
+    font-family: "Indivisa TextSans Bold";
+    font-size: 16px;
+    font-weight: 700;
+    display:inline-block ;
+    margin:0px 20px 0px 20px;
+    letter-spacing: 0px;
+    line-height: 100px;
+}
+#menu ul li a{
+    display: block;
+    color: #163269;
+    text-decoration: none;
+    transition: all 200ms;
+}
+#menu ul li a:hover{
+    color: #37BCF9 ;
+    transform:scale(1.1,1.1);
+}
+.card{
+    float: left;
+    width: 195px;
+    height: 130px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #ddd;
+    background: #17A2B8;
+    overflow: hidden;
+    margin: 28px;
+    margin-top: 40px;
+    transition: all 300ms;
+    border-radius: 5px;
+    font-family: 'Indivisa TextSans Regular';
+    color: white;
+
+}
+.card .icon-card{
+    display: block;
+    color: rgba(0,0,0,.15);
+    font-size: 60px;
+    float: right;
+    transition: all 300ms;
+    margin: 0px auto;
+    margin-right: 10px;
+    padding: 0px;
+    height: 56px;
+}
+
+.card .small-box-footer {
+    display: block;
+    margin: 0px auto;
+    background-color: rgba(0,0,0,.1);
+    color: rgba(255,255,255,.8);
+    text-align: center;
+    text-decoration: none;
+    bottom: 0;  
+    cursor: pointer;
+    padding: 3px 0;
+    margin-top: 0px;
+    
+}
+
+
+
+.card:last-child{
+    margin-right: 0px;
+}
+.card:hover .icon-card{
+    transform:scale(1.2,1.2);
+}
+.card .category{
+    display: block;
+}
+.card .description{
+    display: block;
+}
+
+.card-form{
+
+    box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+    margin-bottom: 1rem;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-top: 30px;
+}
+.card-header{
+    display: block;
+    
+    color:#fff;
+    background: #001D68;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: .75rem 1.25rem;
+    position: relative;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+.card-header .card-title{
+    display: block;
+    font-family: 'Indivisa TextSans Bold';
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+}
+.card-body{
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+}
+.card-body form{
+    display: block;
+    margin-top: 0em;
+}
+.form-group{
+    margin-bottom: 1rem;
+    display: block;
+}
+.form-group label{
+    font-family: 'Indivisa TextSans Bold';
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: .5rem;
+    cursor: default;
+}
+.form-control {
+    display: block;
+    font-family: 'Indivisa TextSans Regular';
+    width: 96%;
+    height: 20px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: gray;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    box-shadow: inset 0 0 0 transparent;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    
+}
+.form-control:focus{
+    outline: none;
+    color:black;
+    box-shadow: 1px 1px 1px grey inset;
+}
+.select {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+   
+}
+
+select option:checked {
+    background: #ccc;
+}
+select option {
+    padding: 8px;
+}
+#cajaDate{
+   display:inline-flex;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-right: 100px;
+    margin-left: 0px;
+}
+#cajaNumero{
+
+     display:inline-flex;
+     float: right;
+     flex: 0 0 50%;
+     max-width: 50%;   
+     margin-right: 16px;
+ }
+ .card-subheader{
+    display: block;
+    width: 100%;
+    color:#fff;
+    background: #001D68;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: .75rem 1.25rem;
+    position: relative;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+.sub-header{
+    display: block;
+    color:#fff;
+    height: 47px;
+    line-height: 47px;
+    background: #001D68;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-right: -20px;
+    margin-left: -20px;
+    margin-bottom: 1rem;
+}
+.sub-header h3{
+    display: block;
+    font-family: 'Indivisa TextSans Bold';
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 20px;
+}
+#dosCajas{
+
+    display:block;
+    float: left;
+    flex: 0 0 50%;
+    max-width: 50%;   
+    margin-right: 16px;
+    width: 45%;
+    
+}
+.ultima-caja{
+    margin-left: 33px;
+}
+.custom-control {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin:0px 20px 0px 20px;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+    -webkit-print-color-adjust: exact;
+    width: 20%;
+   
+    
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.custom-control-input {
+    position: absolute;
+    left: 0;
+    width: 1rem;
+    height: 1.25rem;      
+}
+.init-group{
+    display: block;
+}
+.input-group-text {
+   
+    display: block;
+    float: left;
+    align-items: center;
+    padding: .375rem .75rem;
+    height:20px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .25rem 0px 0px .25rem;
+    width: 10px;
+}
+.flotado{
+    display: block;
+    float: left;
+    width: 251px;
+    margin-right: -20px;
+    border-radius:  0px .25rem .25rem 0px;
+}
+.drop{
+    height: auto;
+}
+.area{
+    height: 70px;
+}
+.btn{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: all 300ms;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #001D68;
+    border-color: #001D68;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: #0176f3;
+    border-color: #0176f3;
+    box-shadow: 0px 0px 3px gray;
+}
+.right{
+    float: right;
+}
+.footer-basic {
+    font-family: 'Indivisa TextSans Regular';
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+    margin-top: 30px;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+      font-family: 'Indivisa TextSans Regular';
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+    color: #001D68;
+  }
+
+.list-inline-item {
+    display: inline-block;
+    color: #001D68;
+}
+#footer i{
+    color: #001D68;
+}
+
+
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple, .select2-container--default.select2-container--focus .select2-selection--single {
+    border-color: #80bdff;
+}
+.select2-container--default.select2-container--open .select2-selection--single {
+    border-color: #80bdff;
+}
+.select2-container--default .select2-selection--single {
+    border: 1px solid #ced4da;
+    padding: .46875rem .75rem;
+    height: calc(2.25rem + 2px);
+}
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+.select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding-left: 0;
+    height: auto;
+    margin-top: -3px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 28px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    display: block;
+    padding-left: 8px;
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 31px;
+    right: 6px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+}
+.select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.select2-container {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+}

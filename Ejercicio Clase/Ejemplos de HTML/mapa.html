@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<!-- 
+    mapa.html
+
+    Ejemplos sobre el elemento mapa de navegacion de html: <map>
+-->
+
+<html>
+    <head>
+        <meta charset=utf-8">
+        <title>Mapa de Imagenes</title>
+    <head>
+
+    <body>
+        <img alt="menu" src="imagenes/menu.jpg" width="135" height="120"
+             usemap="#menu" border="0" />
+
+        <map name="menu">
+            <area alt="HTML" shape="rect" coords="0, 31, 130, 60"
+                  href="html/index.html" />
+            <area alt="CSS" shape="rect" coords="0, 61, 130, 90"
+                  href="css/index.html" />
+            <area alt="JavaScript" shape="rect" coords="0, 91, 130, 120"
+                  href="js/index.html" />
+        </map>
+      </body>
+</html>

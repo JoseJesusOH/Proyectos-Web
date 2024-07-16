@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculadora Java Script</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <script type="text/javascript" src="js/calculadora.js">
+    </script>
+</head>
+
+<body>
+    <div id="myDIV">
+        <div class="item1">Calculadora en JavaScript del Lado del Cliente</div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div id="item4">
+            <h1>Calculadora con JavaScript</h1>
+            <p id="operacion"></p>
+            <input id="numero1" type="number" value="0"/>
+            <button id="sumar" class="boton" type="button" onclick="sumar()">+</button>
+            <button id="restar" class="boton" type="button" onclick="restar()">-</button>
+            <input id="numero2" type="number"  value="0"/>
+            <button id="multiplicar" class="boton" type="button" onclick="multiplicar()">*</button>
+            <button id="dividir" class="boton" type="button" onclick="dividir()">/</button>
+            <input id="resultado" type="text" readonly />
+            <button id="igual" class="igualBoton" type="button" onclick="realizarOperacion()">=</button>
+        </div>
+
+        <div class="item5"></div>
+    </div>
+    <footer>
+        Realizado Por José Jesús Orozco Hernández- Aplicaciones Web Agosto Diciembre 2022
+    </footer>
+</body>
+
+</html>

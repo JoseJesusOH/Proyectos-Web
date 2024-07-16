@@ -1,0 +1,16 @@
+<%--
+    menuPeliculas.jspf
+
+    Este fragmento de página JSP contiene el menú peliculas de la aplicación Web
+    AmanteMusicaWeb versión JSP.
+--%>
+<%@ page pageEncoding="UTF-8" %>
+            <nav>
+                <a href="control?tarea=agregarPelicula">Agregar película</a></li>
+                <a href="control?tarea=actualizarPelicula">Actualizar película</a></li>
+                <a href="control?tarea=eliminarPeliculas">Eliminar peliculas</a></li>
+                <a href="control?tarea=listarPeliculas">Listar peliculas</a></li>
+                <a href="control?tarea=listarPeliculasGenero">Listar películas por género</a></li>
+                <a href="control?tarea=listarPeliculasPeriodo">Listar películas por periodo</a></li>
+                <a href="index.jsp">Página Inicial</a></li>
+            </nav>

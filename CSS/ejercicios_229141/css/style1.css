@@ -1,0 +1,56 @@
+body {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    background: #cdffcc;
+}
+
+#listaPrincipal {
+    color: #1244b1;
+    text-shadow: 0px 0px 1px #1244b1;
+}
+
+
+
+.datosResaltados{
+    color: #000000;
+    text-shadow: 0px 0px 1px;
+}
+
+h1 {
+    color: red;
+    font-size: 28px;
+    text-shadow: 0px 0px 1px red;
+}
+
+h2 {
+    color: #900603;
+    text-shadow: 0px 0px 1px  #900603;
+
+}
+
+.resaltadoAzul {
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 0px 0px 1px #1244b1;
+    font-style: Serif;
+    color: #1244b1;
+}
+
+.resaltadoNegro {
+    font-style: italic;
+    color: white;
+    background-color: black;
+}
+
+p {
+    text-shadow: 0px 0px 1px #1244b1;
+    color: #1244b1;
+}
+
+
+#listaSecundaria {
+    color: #1244b1;
+    text-shadow: 0px 0px 1px #1244b1;
+}
+

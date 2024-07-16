@@ -1,0 +1,16 @@
+<%--
+    menuGeneros.jspf
+
+    Este fragmento de página JSP contiene el menú generos de la aplicación Web
+    AmanteMusicaWeb versión JSP.
+--%>
+<%@ page pageEncoding="UTF-8" %>
+            <nav>
+                <a href="control?tarea=agregarGenero">Agregar género</a></li>
+                <a href="control?tarea=actualizarGenero">Actualizar género</a></li>
+                <a href="control?tarea=eliminarGeneros">Eliminar géneros</a></li>
+                <a href="control?tarea=listarGeneros">Listar géneros</a></li>
+                <a href="control?tarea=listarGenerosGenero">Listar géneros de canciones</a></li>
+                <a href="control?tarea=listarGenerosPeriodo">Listar géneros de películas</a></li>
+                <a href="index.jsp">Página Inicial</a></li>
+            </nav>

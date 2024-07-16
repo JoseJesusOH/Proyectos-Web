@@ -1,0 +1,113 @@
+body {
+	background-color: #f4f4f4;
+	text-align: center;
+}
+
+#myDIV {
+	height: 600px;
+	display: grid;
+	grid-template-columns: auto 350px auto;
+	gap: 10px;
+}
+
+#myDIV div {
+	font-size: 30px;
+
+}
+
+.item1 {
+	font-size: 50px;
+	font-family: Arial;
+	grid-area: 1 / 1 / span 1 / span 3;
+}
+
+.item2 {
+	grid-area: 3 / 1 / span 1 / span 3;
+}
+
+#item4 {
+	width: 400px;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.55);
+}
+
+
+#item4 h1 {
+	font-size: 35px;
+	font-family: Arial;
+	margin-bottom: 60px;
+}
+
+
+#item4 p {
+	font-size: 17px;
+	font-family: Arial;
+	color: darkgray;
+	margin-top: -18px;
+}
+
+
+#item4 .boton {
+	background: #f16529;
+	margin-left: 5px;
+	text-align: center;
+	width: 50px;
+	color: white;
+	border-radius: 8px;
+	border-color: #f16529;
+	outline: #f4f4f4;
+	font-size: 20px;
+	font-family: Arial;
+}
+
+.igualBoton {
+	background: #f16529;
+	text-align: center;
+	width: 50px;
+	margin-right: 40px;
+	border-right: 60px;
+	color: white;
+	border-radius: 8px;
+	border-color: #f16529;
+	outline: #f4f4f4;
+	font-size: 20px;
+	font-family: Arial;
+}
+
+#item4 button[type="button"]:hover {
+	background: yellow;
+	text-align: center;
+	color: black;
+	border-radius: 8px;
+	border-color: yellow;
+	outline: black;
+	font-size: 20px;
+}
+
+#item4 input[type="number"]:hover {
+	background-color: goldenrod;
+}
+
+#item4 input[type="text"]:hover {
+	background-color: goldenrod;
+}
+
+
+
+#item4 input[type="number"] {
+	background-color: azure;
+	font-size: 20px;
+	font-family: Arial;
+}
+
+#item4 input[type="text"] {
+	background-color: bisque;
+	font-size: 20px;
+	margin-right: 25px;
+	font-family: Arial
+}
+
+footer {
+	font-size: 25px;
+	font-family: Arial;
+}

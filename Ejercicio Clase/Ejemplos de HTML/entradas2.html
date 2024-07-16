@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!-- 
+    entradas2.html
+
+    Ejemplos sobre elementos de formulario: <input type="check">, <input type="radio">, <select> y <textarea>
+-->
+
+<html>
+    <head>
+        <meta charset=utf-8">
+        <title>Encuesta</title>
+    </head>
+
+    <body>
+        <form action ="mailto: mdomitsu@itson.mx?subject=Encuesta"
+              method=post enctype="text/plain">
+
+            <h1 align="center">Estimado Alumno</h1>
+
+            <h3 align="center">Por favor llena el siguiente formulario</h3>
+
+            <fieldset align="right">
+                <legend>Informaci&oacute;n que deseas recibir:</legend>
+                <input type="checkbox" id="tutorial" name="archivo" 
+                       value="Tutorial Html" />
+                <label for="tutorial" >Tutorial de HTML</label>
+                <br />
+                <input type="checkbox" id="ejemplos" name="archivo" value="Ejemplo" />
+                <label for="ejemplos" >Archivo de Ejemplos de HTML</label>
+            </fieldset>
+            <br />
+
+            <fieldset>
+                <legend>Carrera inscrito:</legend>
+                <input type="radio" id="electronica" name="carrera" value="Electronica" />
+                <label for="electronica" >Ingenier&iacute;a Electr&oacute;nica</label>
+                <br />
+                <input type="radio" id="industrial" name="carrera" value="Industrial" />
+                <label for="industrial" >Ingenier&iacute;a Industrial</label>
+                <br />
+                <input type="radio" id="software" name="carrera" value ="Software" />
+                <label for="industrial" >Ingenier&iacute;a en Software</label>
+            </fieldset>
+            <br />
+                
+            <fieldset>
+                <legend>Como te enteraste del curso:</legend>
+                <input type="hidden" name="lugar" value="difusion" />
+
+                <select name="donde">
+                    <!-- Opciones del menú -->
+                    <option>De casualidad</option> 
+                    <option disabled>Por mi jefe</option> 
+                    <option>Por un maestro</option> 
+                    <option selected="selected">En el bar</option>
+                    <optgroup label="Redes sociales">
+                        <option>Facebook</option>
+                        <option>Whatsap</option>                         
+                    </optgroup>    
+                </select>
+            </fieldset>
+            <br />
+
+            <fieldset>
+                <legend>Tus Comentarios:</legend>
+                <textarea name="comentario" rows="5" cols="80"></textarea>
+            </fieldset>
+            <br />
+
+            <div align="center" >
+                <input type="submit" name="boton" value="Enviar" />        
+                <input type="reset" value="Borrar" />
+            </div>
+        </form>
+    </body>
+</html>

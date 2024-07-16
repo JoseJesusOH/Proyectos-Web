@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!-- 
+    entradas1.html
+
+    Ejemplos sobre elementos de entradas
+-->
+
+<html>
+    <head>
+        <meta charset=utf-8">
+        <title>Campos de Entrada</title>
+    </head>
+    <body>
+        <form action ="mailto: mdomitsu@itson.mx?subject=Encuesta"
+              method=post enctype="text/plain">
+            <p>Campo de entrada de texto</p>
+            <label for="nombreId">Nombre*: </label>
+            <input type="text" id="nombreId" name="nombre" size=15 maxlenght=40 required />
+            
+            <p>Campo de entrada de password</p>
+            <label for="passwordId">Password*: </label>
+            <input type="password" id="passwordId" name="password" placeholder="contrase&ntilde;a" required />
+
+            <p>Campo de entrada con lista de opciones predefinida</p>
+            <label for="origenId" >Estado de origen: </label>
+            <input type="text" id="origenId" name="origen" list="estadosId" />
+            
+            <datalist id="estadosId">
+                <option value="Son">Sonora</option>
+                <option value="Sin">Sinaloa</option>
+                <option value="Chi" disabled >Chihuahua</option>
+                <option value="BCN">Baja California Norte</option>
+                <option value="BCS">Baja California Sur"</option>
+            </datalist>
+            
+            <p>Campo de entrada de n&uacute;mero</p>
+            <label for="numeroId" >Numero, [10, 20]: </label>
+            <input type="number" id="numeroId" name="numero" min=10 max=20  value=15 /><br>
+
+            <p>Campo de entrada de fecha</p>
+            <label for="cumpleanhosId" >Fecha de nacimiento: </label>
+            <input type="date" id="cumpleanhosId" name="cumpleanhos" />
+
+            <p>Campo de entrada de hora</p>
+            <label for="horaEntradaId" >Hora de entrada: </label>
+            <input type="time" id="horaEntradaId" name="horaEntrada" />
+
+            <p>Campo de entrada de e-mail</p>
+            <label for="emailId" >E-mail: </label>
+            <input type="email" id="emailId" name="email" />
+            
+            <p>Campo de entrada de url</p>
+            <label for="urlId" >Direcci&oacute;n URL: </label>
+            <input type="url" id="urlId" name="url" value="http://www.itson.mx" />
+
+            <p>Campo de entrada de con validaci&oacute;n</p>
+            <label for="claveId" >Clave, ABC1234: </label>
+            <input type="text" id="claveId" name="clave" pattern="^[A-Z]{3}[0-9]{4}$" 
+                   title="Tres letras may&uacute;sculas seguidas de 4 d&iacute;gitos" /><br>
+            
+            <div align="center" >
+                <input type="submit" name="boton" value="Enviar" />        
+                <input type="reset" value="Borrar" />
+            </div>
+        </form>
+    </body>
+</html>

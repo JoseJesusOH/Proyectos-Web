@@ -1,0 +1,11 @@
+<%--
+    piePagina.jspf
+
+    Este fragmento de página JSP contiene el encabezado de la aplicación Web
+    AmanteMusicaWeb versión JSP.
+--%>
+
+<%@ page pageEncoding="UTF-8" %>
+            <header>
+                <img alt="titulo" src="imagenes/titulo.PNG" width="800" height="150">
+            </header>

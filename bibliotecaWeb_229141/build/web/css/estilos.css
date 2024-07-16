@@ -1,0 +1,159 @@
+body {
+    font-family: Arial sans-serif;
+    margin: 0;
+    padding: 0;
+}    
+
+.contenedorGrid {
+    display: grid;
+    grid-template-rows: 152px calc(100vh - 268px) 100px;
+    grid-template-columns: 221px calc(100vw - 201px);
+}
+
+header {
+    grid-column: 1 / span 2;
+    border-bottom: 1px solid Silver;
+    text-align: center;
+}
+
+nav {
+    border-right: 1px solid Silver;
+}
+
+main {
+    overflow: scroll;
+}
+
+footer {
+    grid-column: 1 / span 2;
+    text-align: center;
+    border-top: 1px solid Silver;
+}
+
+nav a {
+    display: block;
+    width: 200px;  
+    text-decoration: none;
+    color: #000;
+    background-color: #ccc;
+    line-height: 2em;
+    height: 2em;
+    padding: 0 10px;
+    border-bottom: 1px solid Silver;
+}
+
+
+nav a:link {
+      color: Blue; 
+}
+
+nav a:visited {
+      color: fuchsia; 
+}
+
+nav a:hover {
+    color: #eee;
+    background-color: #777;
+}
+
+.contenedorFormulario {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 50% auto auto;
+    gap: 5px;
+}
+
+.contenedorFormulario > div.span {
+    grid-column: 1 / span 3;
+}
+
+.contenedorFormulario > div.centrada {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorFormulario > div.derecha {
+    text-align: right;
+}
+
+table.centrada {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.bicolor {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+caption {
+   caption-side: top;
+   margin-bottom: 0.5em;
+   font-size: 150%;
+   font-weight: bold;
+}
+
+
+table.bicolor tr:nth-child(odd) {
+    background-color: yellow;
+}
+
+table.bicolor tr:nth-child(even) {
+    background-color: white;
+}
+
+th {
+    text-align: center;
+    background-color: #ddd;
+    border: 1px solid #888;
+}
+
+th.error {
+    text-align: right;
+    padding-right: 5px;
+    background-color: #fff;
+    border-style: none;
+}
+
+td.derecha {
+    text-align: right;
+    padding-right: 5px;
+}
+
+td.gris {
+    background-color: #ddd;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #888;
+}
+
+table.bicolor td {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #888;
+}
+
+div.msjError {
+  color: red;
+  padding-left: 5px;
+}
+
+div.msjAviso {
+  color: green;
+  white-space: pre;
+  padding-left: 5px;
+}
+
+h1 {
+   text-align: center;
+}
+
+input[readonly] {
+    background-color: #ddd;
+}
+
+div.centrada {
+    text-align: center;
+}

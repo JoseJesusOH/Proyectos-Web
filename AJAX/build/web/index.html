@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/table.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+
+        <section class="wrap-table-content2">
+            <div class="card-form">
+                <div class="card-header">
+                    <h3 class="card-title">Consultar Regiones</h3>
+                </div>
+                <div class="card-body">
+                    <table id="demo"></table>
+                </div>
+            </div>
+        </section>
+        <script>
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    const obj = JSON.parse(this.responseText);
+                    printTable(obj);
+                }
+            };
+            xhttp.open("GET", "http://localhost:8080/Regiones", true);
+            xhttp.send();
+
+            function printTable(json) {
+                var table = "<tr><th>ID</th><th>REGION</th></tr>";
+                for (i = 0; i < json.length; i++) {
+                    table += "<tr><td>" +
+                            json[i].RegionID +
+                            "</td><td>" +
+                            json[i].RegionDescription +
+                            "</td></tr>";
+                }
+                document.getElementById("demo").innerHTML = table;
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,13 @@
+<%--
+    menuPpal.jspf
+  Fragmento de página, llamada “menuPpal” con un menú las opciones: “Catálogo
+de revistas” e “Inventario de revistas” que serán ligas a otras páginas, llamadas
+“revistas” e “inventario”.
+--%>
+
+
+<%@ page pageEncoding="UTF-8" %>
+<nav>
+    <a href="canciones.jsp">Catálogo de revistas</a></li>
+<a href="peliculas.jsp">Inventario de revistas</a></li>
+</nav>
